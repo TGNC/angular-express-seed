@@ -1,0 +1,24 @@
+<div>
+    <form #newUser="ngForm" (ngSubmit)="addUser(newUser)" novalidate>
+        <div class="title">
+            Add a new user
+        </div>
+
+        <div class="field">
+            <span>Name:</span>
+            <input ngModel type="text" name="name">
+        </div>
+
+        <div class="field">
+            <span>Age:</span>
+            <input ngModel type="number" name="age">
+        </div>
+
+        <div class="field">
+            <span>Gender:</span>
+            <input ngModel type="text" name="gender">
+        </div>
+
+        <button> Save </button>
+    </form>
+</div>

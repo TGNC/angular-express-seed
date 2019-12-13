@@ -1,0 +1,11 @@
+<div *ngFor="let user of users">
+    <div class="user">
+      <span class="name">{{user.name}}</span>
+      <span class="age">{{user.age}}</span>
+      <span class="gender">{{user.gender}}</span>
+    </div>
+</div>
+
+<div class="add-user">
+  <a [routerLink]="['/new-user']"> Add new user</a>
+</div>
